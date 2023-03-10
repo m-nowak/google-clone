@@ -4,7 +4,7 @@ import { useSearchParams, useRouter } from "next/navigation";
 import { RxCross2 } from "react-icons/rx";
 import { BsFillMicFill } from "react-icons/bs";
 import { AiOutlineSearch } from "react-icons/ai";
-import { useState, useRef, use, LegacyRef } from "react";
+import { useState, useRef } from "react";
 
 export default function SearchBox() {
   const router = useRouter();
@@ -15,7 +15,7 @@ export default function SearchBox() {
   const handleSubmit = (e: React.MouseEvent | React.FormEvent) => {
     e.preventDefault();
     if (!query.trim()) return;
-    router.push(`/search/?q=${query}&searchType=${searchType}`);
+    router.push(`/search?q=${query}&searchType=${searchType}`);
   };
 
   return (
