@@ -1,9 +1,7 @@
 "use client";
 
 import React from "react";
-import Link from "next/link";
 import { useSearchParams } from "next/navigation";
-import { motion as m } from "framer-motion";
 import AllLoader from "./AllLoader";
 import ImageLoader from "./ImageLoader";
 import useSearchResults from "@/hooks/useSearchResults";

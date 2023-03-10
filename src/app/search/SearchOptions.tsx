@@ -1,9 +1,8 @@
 "use client";
 
 import { AiOutlineCamera, AiOutlineSearch } from "react-icons/ai";
-import { usePathname, useRouter, useSearchParams } from "next/navigation";
+import { useRouter, useSearchParams } from "next/navigation";
 export default function SearchOptions() {
-  const pathname = usePathname();
   const router = useRouter();
   const searchParams = useSearchParams();
   const q = searchParams.get("q");

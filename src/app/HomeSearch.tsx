@@ -5,8 +5,6 @@ import { useRouter } from "next/navigation";
 import { AiOutlineSearch } from "react-icons/ai";
 import { BsFillMicFill } from "react-icons/bs";
 import Spinner from "../components/Spinner";
-import { useQuery } from "@tanstack/react-query";
-import axios from "axios";
 
 export default function HomeSearch() {
   const router = useRouter();
